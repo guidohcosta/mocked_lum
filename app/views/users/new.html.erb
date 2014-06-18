@@ -1,0 +1,13 @@
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+<div id="user-form">
+  <%= form_for @user do |f| %>
+    <%= f.label :name, 'Name' %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email, 'Email' %>
+    <%= f.text_field :email %>
+
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>
